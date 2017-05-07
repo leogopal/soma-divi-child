@@ -1,0 +1,26 @@
+/*
+Four column full width grid
+ */
+
+.sera-grid {
+
+  &.et_pb_section {
+    padding: 0;
+
+    .et_pb_row_fullwidth {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0;
+      margin: 0;
+
+      &.et_pb_row_4col {
+        .et_pb_column {
+          width: 25%;
+          margin: 0;
+        }
+      }
+
+    }
+
+  }
+}
