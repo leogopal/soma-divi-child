@@ -70,6 +70,10 @@
   display: flex;
   float: none;
   justify-content: center;
+
+  .et-cart-info {
+    display: none;
+  }
 }
 
 #top-menu-nav {
