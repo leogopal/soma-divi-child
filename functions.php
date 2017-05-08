@@ -10,7 +10,7 @@ function theme_enqueue_styles() {
 
 	wp_enqueue_style( 'divi-child-style', get_stylesheet_uri(), array( $parent_style ) );
 
-	wp_enqueue_script( 'divi', plugin_dir_url( __FILE__ ) . 'js/scripts.js', array(
+	wp_enqueue_script( 'divi', plugin_dir_url( __FILE__ ) . 'assets/js/scripts.js', array(
 		'jquery',
 		'divi-custom-script'
 	), '0.0.1', true );
