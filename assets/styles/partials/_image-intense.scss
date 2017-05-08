@@ -1,73 +1,11 @@
-/*
- Theme Name:   SOMA Divi Child Theme
- Theme URI:    http://elegantthemes.com/
- Description:  A child theme for Divi built on the Divi Theme
- Author:       Leo Gopal
- Author URI:   http://leogopal.com
- Template:     Divi
- Version:      0.0.1
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
- Text Domain:  divi-child-theme
-*/
-/* Body */
-/* Header */
-/* Top Header */
-/* Main Header */
-#et-top-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  float: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#et-top-navigation .et-cart-info {
-  display: none;
-}
-
-/* Vertical Navigation */
-/* Header Style */
-/* Fullwidth Header */
-/* Hide Header */
-/* Hide Logo */
-/* Fullwidth Top Header */
-/* Hide Search Icon */
-/* Grid */
-/*
-Four column full width grid
- */
-.sera-grid.et_pb_section {
-  padding: 0;
-}
-
-.sera-grid.et_pb_section .et_pb_row_fullwidth {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 0;
-  margin: 0;
-}
-
-.sera-grid.et_pb_section .et_pb_row_fullwidth.et_pb_row_4col .et_pb_column {
-  width: 25%;
-  margin: 0;
-}
-
-/* Button */
-/* Input */
-/* Footer */
-/* Image Intense */
 /* 
 	Divi "Image Intense" Module
 */
+
 /* -------------------------------------------------------------------  global Intense styling */
 .et_pb_image_n10s {
   overflow: auto;
 }
-
 .et_pb_image .n10s-block {
   background-size: cover;
 }
@@ -75,8 +13,9 @@ Four column full width grid
 @media all and (max-width: 980px) {
   .et_always_center_on_mobile .n10s-block {
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+    -ms-transform: translate( -50%, 0 );
+    -webkit-transform: translate( -50%, 0 );
+    transform: translate( -50%, 0 );
   }
 }
 
@@ -100,7 +39,6 @@ div[class*="et_pb_image_n10s_"] {
   position: relative;
   display: block;
 }
-
 @media all and (max-width: 980px) {
   .n10s-block img {
     min-height: initial;
@@ -110,17 +48,14 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-block .n10s-overlay {
   text-transform: uppercase;
   font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   padding: 2em;
   color: #fff;
 }
-
 .n10s-block .n10s-overlay::after {
   /* Allow a hyperlink beneath any "after" pseudo-element to work */
   pointer-events: none;
 }
-
 .n10s-block .n10s-overlay, .n10s-block .n10s-overlay > a {
   position: absolute;
   top: 0px;
@@ -133,13 +68,12 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-block .n10s-overlay > a.et_pb_promo_button.et_pb_button {
   width: auto;
   height: auto;
-  margin: 0.25em;
-  /* no crowding if we're not middle center! */
+  margin: 0.25em;	/* no crowding if we're not middle center! */
   /* "middle center" part next */
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate( -50%, -50% );
+  transform: translate( -50%, -50% );
 }
 
 .n10s-block h2, .n10s-block figure p {
@@ -151,16 +85,13 @@ div[class*="et_pb_image_n10s_"] {
   font-weight: 300 !important;
   color: #fff;
 }
-
 .n10s-block h2 span {
   font-weight: 800 !important;
 }
-
 .n10s-block p {
   font-size: 68.5%;
   line-height: 1.2em !important;
 }
-
 /* Styling for full-width column modules */
 .et_pb_column_4_4 .n10s, .et_pb_column_4_4 .n10s img {
   width: 100%;
@@ -168,21 +99,24 @@ div[class*="et_pb_image_n10s_"] {
 }
 
 /* ------------------------------------------------------------------- Hover effect specific styling */
+
 /*---------------*/
 /***** Seattle *****/
 /*---------------*/
+
 .n10s-seattle .n10s-overlay::before {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
-  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+  background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+  background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
   content: '';
   opacity: 0;
-  -webkit-transform: translate3d(0, 50%, 0);
-  transform: translate3d(0, 50%, 0);
+  -webkit-transform: translate3d(0,50%,0);
+  -ms-transform: translate3d(0,50%,0);
+  transform: translate3d(0,50%,0);
 }
 
 .n10s-seattle h2 {
@@ -191,20 +125,15 @@ div[class*="et_pb_image_n10s_"] {
   left: 0;
   width: 100%;
   -webkit-transition: -webkit-transform 0.35s, color 0.35s;
-  -webkit-transition: color 0.35s, -webkit-transform 0.35s;
-  transition: color 0.35s, -webkit-transform 0.35s;
   transition: transform 0.35s, color 0.35s;
-  transition: transform 0.35s, color 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, -50%, 0);
-  transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0,-50%,0);
+  transform: translate3d(0,-50%,0);
 }
 
 .n10s-seattle .n10s-overlay::before,
 .n10s-seattle p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-seattle p {
@@ -214,26 +143,30 @@ div[class*="et_pb_image_n10s_"] {
   padding: 2em !important;
   width: 100%;
   opacity: 0;
-  -webkit-transform: translate3d(0, 10px, 0);
-  transform: translate3d(0, 10px, 0);
+  -webkit-transform: translate3d(0,10px,0);
+  -ms-transform: translate3d(0,10px,0);
+  transform: translate3d(0,10px,0);
 }
 
 .n10s-seattle:hover h2 {
   color: #fff;
-  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
-  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+  -ms-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+  transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
 }
 
-.n10s-seattle:hover .n10s-overlay::before,
+.n10s-seattle:hover .n10s-overlay::before ,
 .n10s-seattle:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*---------------*/
 /***** Berlin *****/
 /*---------------*/
+
 .n10s-berlin {
   background: #9e5406;
 }
@@ -258,64 +191,64 @@ div[class*="et_pb_image_n10s_"] {
   content: '';
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   /*pointer-events: none;*/
 }
 
 .n10s-berlin .n10s-overlay::before {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  -webkit-transform: scale(0, 1);
-  transform: scale(0, 1);
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
 }
 
 .n10s-berlin .n10s-overlay::after {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
-  -webkit-transform: scale(1, 0);
-  transform: scale(1, 0);
+  -webkit-transform: scale(1,0);
+  -ms-transform: scale(1,0);
+  transform: scale(1,0);
 }
 
 .n10s-berlin h2 {
   padding-top: 30%;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, -20px, 0);
-  transform: translate3d(0, -20px, 0);
+  -webkit-transform: translate3d(0,-20px,0);
+  -ms-transform: translate3d(0,-20px,0);
+  transform: translate3d(0,-20px,0);
 }
 
 .n10s-berlin p {
   padding: 20px 2.5em !important;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 20px, 0);
-  transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0,20px,0);
+  -ms-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
 }
 
 .n10s-berlin:hover .n10s-overlay::before,
 .n10s-berlin:hover .n10s-overlay::after {
   opacity: 1;
   -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
 }
 
 .n10s-berlin:hover h2,
 .n10s-berlin:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*---------------*/
 /***** Dallas *****/
 /*---------------*/
+
 .n10s-dallas {
   -webkit-perspective: 1000px;
   perspective: 1000px;
@@ -323,17 +256,15 @@ div[class*="et_pb_image_n10s_"] {
 
 .n10s-dallas img {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 0, 300px);
-  transform: translate3d(0, 0, 300px);
+  -webkit-transform: translate3d(0,0,300px);
+  transform: translate3d(0,0,300px);
 }
 
 .n10s-dallas:hover img {
   opacity: 0.6;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-dallas .n10s-overlay::before,
@@ -346,23 +277,21 @@ div[class*="et_pb_image_n10s_"] {
   background: #fff;
   content: '';
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
 }
 
 .n10s-dallas:hover .n10s-overlay::before {
   opacity: 0.5;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
-  transform: translate3d(-50%, -50%, 0) rotate(45deg);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(45deg);
+  transform: translate3d(-50%,-50%,0) rotate(45deg);
 }
 
 .n10s-dallas:hover .n10s-overlay::after {
   opacity: 0.5;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-  transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg);
+  transform: translate3d(-50%,-50%,0) rotate(-45deg);
 }
 
 .n10s-dallas h2,
@@ -372,35 +301,34 @@ div[class*="et_pb_image_n10s_"] {
   left: 0;
   width: 100%;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-dallas h2 {
-  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
-  transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+  transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
 }
 
 .n10s-dallas p {
   padding: 0.25em 2em !important;
-  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
-  transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+  transform: translate3d(0,-50%,0) translate3d(0,150%,0);
 }
 
 .n10s-dallas:hover h2 {
-  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
-  transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+  transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
 }
 
 .n10s-dallas:hover p {
-  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
-  transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+  transform: translate3d(0,-50%,0) translate3d(0,100%,0);
 }
 
 /*---------------*/
 /***** London *****/
 /*---------------*/
+
 .n10s-london {
   background: #18a367;
 }
@@ -446,8 +374,8 @@ div[class*="et_pb_image_n10s_"] {
   padding: 0.5em 2em !important;
   text-transform: none;
   opacity: 0;
-  -webkit-transform: translate3d(0, -10px, 0);
-  transform: translate3d(0, -10px, 0);
+  -webkit-transform: translate3d(0,-10px,0);
+  transform: translate3d(0,-10px,0);
 }
 
 .n10s-london img,
@@ -455,9 +383,7 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-london .n10s-overlay::after,
 .n10s-london p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-london:hover img {
@@ -472,8 +398,8 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-london:hover h2,
 .n10s-london:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-london:hover .n10s-overlay::after,
@@ -487,6 +413,7 @@ div[class*="et_pb_image_n10s_"] {
 /*---------------*/
 /***** Hanoi *****/
 /*---------------*/
+
 .n10s-hanoi {
   background: #4a3753;
 }
@@ -509,8 +436,8 @@ div[class*="et_pb_image_n10s_"] {
   height: 10px;
   background: #fff;
   content: '';
-  -webkit-transform: translate3d(0, 10px, 0);
-  transform: translate3d(0, 10px, 0);
+  -webkit-transform: translate3d(0,10px,0);
+  transform: translate3d(0,10px,0);
 }
 
 .n10s-hanoi h2 {
@@ -520,43 +447,40 @@ div[class*="et_pb_image_n10s_"] {
   padding: 1em 1.5em;
   width: 100%;
   text-align: left;
-  -webkit-transform: translate3d(0, -30px, 0);
-  transform: translate3d(0, -30px, 0);
+  -webkit-transform: translate3d(0,-30px,0);
+  transform: translate3d(0,-30px,0);
 }
 
 .n10s-hanoi h2 i {
   font-style: normal;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, -30px, 0);
-  transform: translate3d(0, -30px, 0);
+  -webkit-transform: translate3d(0,-30px,0);
+  transform: translate3d(0,-30px,0);
 }
 
 .n10s-hanoi .n10s-overlay::before,
 .n10s-hanoi h2 {
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-hanoi:hover .n10s-overlay::before,
 .n10s-hanoi:hover h2,
 .n10s-hanoi:hover h2 i {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*---------------*/
 /***** Oslo *****/
 /*---------------*/
+
 .n10s-oslo {
   background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-  background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+  background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
 }
 
 .n10s-oslo img {
@@ -567,7 +491,7 @@ div[class*="et_pb_image_n10s_"] {
 
 .n10s-oslo .n10s-overlay {
   padding: 1em;
-  background-color: rgba(58, 52, 42, 0.7);
+  background-color: rgba(58,52,42,0.7);
   -webkit-transition: background-color 0.35s;
   transition: background-color 0.35s;
 }
@@ -585,27 +509,23 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-oslo h2 {
   margin: 0 0 10px 0;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
 }
 
 .n10s-oslo .n10s-overlay::before,
 .n10s-oslo p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 
 .n10s-oslo:hover h2 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-oslo:hover .n10s-overlay::before,
@@ -616,7 +536,7 @@ div[class*="et_pb_image_n10s_"] {
 }
 
 .n10s-oslo:hover .n10s-overlay {
-  background-color: rgba(58, 52, 42, 0);
+  background-color: rgba(58,52,42,0);
 }
 
 .n10s-oslo:hover img {
@@ -626,6 +546,7 @@ div[class*="et_pb_image_n10s_"] {
 /*---------------*/
 /***** Mumbai *****/
 /*---------------*/
+
 .n10s-mumbai .n10s-overlay {
   text-align: right;
 }
@@ -638,26 +559,25 @@ div[class*="et_pb_image_n10s_"] {
   padding: 10px 0 !important;
 }
 
+
 .n10s-mumbai p {
   bottom: 30px;
   line-height: 1.5;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
 }
 
 .n10s-mumbai h2 {
   top: 30px;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 20px, 0);
-  transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
 }
 
 .n10s-mumbai:hover h2 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-mumbai h2::after {
@@ -668,29 +588,27 @@ div[class*="et_pb_image_n10s_"] {
   height: 4px;
   background: #fff;
   content: '';
-  -webkit-transform: translate3d(0, 40px, 0);
-  transform: translate3d(0, 40px, 0);
+  -webkit-transform: translate3d(0,40px,0);
+  transform: translate3d(0,40px,0);
 }
 
 .n10s-mumbai h2::after,
 .n10s-mumbai p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-mumbai:hover h2::after,
 .n10s-mumbai:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
-
 /*---------------*/
 /***** Auckland *****/
 /*---------------*/
+
 .n10s-auckland {
   background-color: #17819c;
 }
@@ -698,9 +616,7 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-auckland img {
   opacity: 0.7;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
@@ -714,11 +630,9 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-auckland h2 {
   margin-top: 20%;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 20px, 0);
-  transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
 }
 
 .n10s-auckland p {
@@ -727,41 +641,37 @@ div[class*="et_pb_image_n10s_"] {
   border: 1px solid #fff;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 20px, 0) scale(1.1);
-  transform: translate3d(0, 20px, 0) scale(1.1);
+  -webkit-transform: translate3d(0,20px,0) scale(1.1);
+  transform: translate3d(0,20px,0) scale(1.1);
 }
 
 .n10s-auckland:hover h2 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-auckland:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0) scale(1);
-  transform: translate3d(0, 0, 0) scale(1);
+  -webkit-transform: translate3d(0,0,0) scale(1);
+  transform: translate3d(0,0,0) scale(1);
 }
-
 /*---------------*/
 /***** Rochester *****/
 /*---------------*/
+
 .n10s-rochester {
   background: #2e5d5a;
 }
 
 .n10s-rochester img {
+  width: -webkit-calc(100% + 60px);
   width: calc(100% + 60px);
   opacity: 1;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s, margin-left 0.35s;
-  -webkit-transition: opacity 0.35s, margin-left 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, margin-left 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, margin-left 0.35s;
-  transition: opacity 0.35s, transform 0.35s, margin-left 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(-30px, 0, 0) scale(1.12);
-  transform: translate3d(-30px, 0, 0) scale(1.12);
+  -webkit-transform: translate3d(-30px,0,0) scale(1.12);
+  transform: translate3d(-30px,0,0) scale(1.12);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   margin-left: 3%;
@@ -769,8 +679,8 @@ div[class*="et_pb_image_n10s_"] {
 
 .n10s-rochester:hover img {
   opacity: 0.5;
-  -webkit-transform: translate3d(0, 0, 0) scale(1);
-  transform: translate3d(0, 0, 0) scale(1);
+  -webkit-transform: translate3d(0,0,0) scale(1);
+  transform: translate3d(0,0,0) scale(1);
   margin-left: 0;
 }
 
@@ -788,25 +698,24 @@ div[class*="et_pb_image_n10s_"] {
   text-align: right;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(-40px, 0, 0);
-  transform: translate3d(-40px, 0, 0);
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
 }
 
 .n10s-rochester:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*---------------*/
 /***** Douala *****/
 /*---------------*/
+
 .n10s-douala {
-  background: -webkit-linear-gradient(top, #258dc8 0%, #683c13 100%);
-  background: linear-gradient(to bottom, #258dc8 0%, #683c13 100%);
+  background: -webkit-linear-gradient(top, rgba(37,141,200,1) 0%, rgba(104,60,19,1) 100%);
+  background: linear-gradient(to bottom, rgba(37,141,200,1) 0%,rgba(104,60,19,1) 100%);
 }
 
 .n10s-douala h2 {
@@ -827,20 +736,19 @@ div[class*="et_pb_image_n10s_"] {
   right: 30px;
   bottom: 20px;
   left: 30px;
+  height: -webkit-calc(50% - 30px);
   height: calc(50% - 30px);
   border: 7px solid #fff;
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
 }
 
 .n10s-douala:hover .n10s-overlay::after {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-douala .n10s-overlay {
@@ -855,33 +763,30 @@ div[class*="et_pb_image_n10s_"] {
   left: 60px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, -100px, 0);
-  transform: translate3d(0, -100px, 0);
+  -webkit-transform: translate3d(0,-100px,0);
+  transform: translate3d(0,-100px,0);
 }
 
 .n10s-douala:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*---------------*/
 /***** Seoul *****/
 /*---------------*/
+
 .n10s-seoul {
   background: #42b078;
 }
 
 .n10s-seoul img {
+  width: -webkit-calc(100% + 30px);
   width: calc(100% + 30px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s, margin-left 0.35s;
-  -webkit-transition: opacity 0.35s, margin-left 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, margin-left 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, margin-left 0.35s;
-  transition: opacity 0.35s, transform 0.35s, margin-left 0.35s, -webkit-transform 0.35s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: scale(1.1, 1);
@@ -890,8 +795,8 @@ div[class*="et_pb_image_n10s_"] {
 
 .n10s-seoul:hover img {
   opacity: 0.4;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   margin-left: 0;
 }
 
@@ -914,43 +819,38 @@ div[class*="et_pb_image_n10s_"] {
   background: #fff;
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
 }
 
 .n10s-seoul:hover h2::after {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-seoul p {
   padding: 1em 0 !important;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
 }
 
 .n10s-seoul:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*---------------*/
 /***** Cali *****/
 /*---------------*/
+
 .n10s-cali img {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: scale(1.12);
   transform: scale(1.12);
 }
@@ -981,9 +881,7 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-cali p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-cali h2 {
@@ -1007,15 +905,14 @@ div[class*="et_pb_image_n10s_"] {
 /*---------------*/
 /***** Sydney *****/
 /*---------------*/
+
 .n10s-sydney {
   background: #2f3238;
 }
 
 .n10s-sydney img {
   -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
   transition: opacity 1s, transform 1s;
-  transition: opacity 1s, transform 1s, -webkit-transform 1s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -1033,17 +930,15 @@ div[class*="et_pb_image_n10s_"] {
   display: inline-block;
   margin: 0 0 0.25em;
   padding: 0.4em 1em !important;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255,255,255,0.9);
   color: #2f3238;
   text-transform: none;
   font-weight: 500;
   font-size: 75%;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(-1000px, 0, 0);
-  transform: translate3d(-1000px, 0, 0);
+  -webkit-transform: translate3d(-1000px,0,0);
+  transform: translate3d(-1000px,0,0);
 }
 
 .n10s-sydney p:first-child {
@@ -1078,19 +973,20 @@ div[class*="et_pb_image_n10s_"] {
 
 .n10s-sydney:hover img {
   opacity: 0.4;
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  transform: scale3d(1.1, 1.1, 1);
+  -webkit-transform: scale3d(1.1,1.1,1);
+  transform: scale3d(1.1,1.1,1);
 }
 
 .n10s-sydney:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*-----------------*/
 /***** Toronto *****/
 /*-----------------*/
+
 .n10s-toronto {
   background: #df4e4e;
 }
@@ -1098,9 +994,7 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-toronto img,
 .n10s-toronto h2 {
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-toronto img {
@@ -1122,32 +1016,31 @@ div[class*="et_pb_image_n10s_"] {
   font-size: 90%;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 50px, 0);
-  transform: translate3d(0, 50px, 0);
+  -webkit-transform: translate3d(0,50px,0);
+  transform: translate3d(0,50px,0);
 }
 
 .n10s-toronto:hover img {
-  -webkit-transform: translate3d(0, -80px, 0);
-  transform: translate3d(0, -80px, 0);
+  -webkit-transform: translate3d(0,-80px,0);
+  transform: translate3d(0,-80px,0);
 }
 
 .n10s-toronto:hover h2 {
-  -webkit-transform: translate3d(0, -100px, 0);
-  transform: translate3d(0, -100px, 0);
+  -webkit-transform: translate3d(0,-100px,0);
+  transform: translate3d(0,-100px,0);
 }
 
 .n10s-toronto:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*-----------------*/
 /***** Paris *****/
 /*-----------------*/
+
 .n10s-paris {
   background: #fff;
 }
@@ -1155,53 +1048,48 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-paris img {
   opacity: 0.95;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
 
 .n10s-paris:hover img {
-  -webkit-transform: scale3d(0.95, 0.95, 1);
-  transform: scale3d(0.95, 0.95, 1);
+  -webkit-transform: scale3d(0.95,0.95,1);
+  transform: scale3d(0.95,0.95,1);
 }
 
 .n10s-paris h2 {
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 20px, 0);
-  transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
 }
 
 .n10s-paris p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
-  transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  -webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
+  transform: perspective(1000px) rotate3d(1,0,0,90deg);
   -webkit-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
 }
 
 .n10s-paris:hover h2 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-paris:hover p {
   opacity: 1;
-  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0);
-  transform: perspective(1000px) rotate3d(1, 0, 0, 0);
+  -webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
+  transform: perspective(1000px) rotate3d(1,0,0,0);
 }
 
 /*-----------------*/
 /***** Kiev *****/
 /*-----------------*/
+
 .n10s-kiev {
   background: #3498db;
 }
@@ -1209,11 +1097,9 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-kiev img {
   opacity: 0.95;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: scale3d(1.05, 1.05, 1);
-  transform: scale3d(1.05, 1.05, 1);
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
 }
 
 .n10s-kiev .n10s-overlay::before {
@@ -1222,14 +1108,12 @@ div[class*="et_pb_image_n10s_"] {
   left: 0;
   width: 110%;
   height: 110%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255,255,255,0.5);
   content: '';
   -webkit-transition: -webkit-transform 0.6s;
-  transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
-  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
-  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+  transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
 }
 
 .n10s-kiev p {
@@ -1252,13 +1136,13 @@ div[class*="et_pb_image_n10s_"] {
 
 .n10s-kiev:hover img {
   opacity: 0.6;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
 }
 
 .n10s-kiev:hover .n10s-overlay::before {
-  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
-  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+  -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+  transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
 }
 
 .n10s-kiev:hover p {
@@ -1270,6 +1154,7 @@ div[class*="et_pb_image_n10s_"] {
 /*-----------------*/
 /***** Copenhagen *****/
 /*-----------------*/
+
 .n10s-copenhagen {
   z-index: auto;
   background: #000;
@@ -1288,7 +1173,7 @@ div[class*="et_pb_image_n10s_"] {
 }
 
 .n10s-copenhagen:before {
-  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 30px rgba(0,0,0,0.8);
   opacity: 0;
 }
 
@@ -1299,11 +1184,9 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-copenhagen img {
   opacity: 1;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
-  transform: perspective(1000px) translate3d(0, 0, 0);
+  -webkit-transform: perspective(1000px) translate3d(0,0,0);
+  transform: perspective(1000px) translate3d(0,0,0);
 }
 
 .n10s-copenhagen h2,
@@ -1319,7 +1202,7 @@ div[class*="et_pb_image_n10s_"] {
 }
 
 .n10s-copenhagen h2:before {
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
 .n10s-copenhagen p {
@@ -1328,11 +1211,9 @@ div[class*="et_pb_image_n10s_"] {
   font-weight: 800;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: scale3d(0.9, 0.9, 1);
-  transform: scale3d(0.9, 0.9, 1);
+  -webkit-transform: scale3d(0.9,0.9,1);
+  transform: scale3d(0.9,0.9,1);
 }
 
 .n10s-copenhagen:hover:before {
@@ -1340,8 +1221,8 @@ div[class*="et_pb_image_n10s_"] {
 }
 
 .n10s-copenhagen:hover img {
-  -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
-  transform: perspective(1000px) translate3d(0, 0, 21px);
+  -webkit-transform: perspective(1000px) translate3d(0,0,21px);
+  transform: perspective(1000px) translate3d(0,0,21px);
 }
 
 .n10s-copenhagen:hover h2:before {
@@ -1350,17 +1231,17 @@ div[class*="et_pb_image_n10s_"] {
 
 .n10s-copenhagen:hover p {
   opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
 }
 
 /*-----------------*/
 /***** Lisbon *****/
 /*-----------------*/
+
 .n10s-lisbon {
-  background: -webkit-linear-gradient(-45deg, #EC65B7 0%, #05E0D8 100%);
-  background: -webkit-linear-gradient(135deg, #EC65B7 0%, #05E0D8 100%);
-  background: linear-gradient(-45deg, #EC65B7 0%, #05E0D8 100%);
+  background: -webkit-linear-gradient(-45deg, #EC65B7 0%,#05E0D8 100%);
+  background: linear-gradient(-45deg, #EC65B7 0%,#05E0D8 100%);
 }
 
 .n10s-lisbon img {
@@ -1380,11 +1261,9 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-lisbon h2 {
   text-align: left;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(10px, 10px, 0);
-  transform: translate3d(10px, 10px, 0);
+  -webkit-transform: translate3d(10px,10px,0);
+  transform: translate3d(10px,10px,0);
 }
 
 .n10s-lisbon p {
@@ -1393,22 +1272,20 @@ div[class*="et_pb_image_n10s_"] {
   text-align: right;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
 }
 
 .n10s-lisbon:hover h2 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-lisbon:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .n10s-lisbon:hover img {
@@ -1418,10 +1295,10 @@ div[class*="et_pb_image_n10s_"] {
 /*---------------*/
 /***** Taipei *****/
 /*---------------*/
+
 .n10s-taipei {
-  background: -webkit-linear-gradient(-45deg, #f3cf3f 0%, #f33f58 100%);
-  background: -webkit-linear-gradient(135deg, #f3cf3f 0%, #f33f58 100%);
-  background: linear-gradient(-45deg, #f3cf3f 0%, #f33f58 100%);
+  background: -webkit-linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
+  background: linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
 }
 
 .n10s-taipei img {
@@ -1432,9 +1309,7 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-taipei img,
 .n10s-taipei p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-taipei .n10s-overlay::after {
@@ -1447,8 +1322,8 @@ div[class*="et_pb_image_n10s_"] {
   border-bottom: 1px solid #fff;
   content: '';
   opacity: 0;
-  -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
-  transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+  -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+  transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   /*pointer-events: none;*/
@@ -1457,16 +1332,14 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-taipei h2,
 .n10s-taipei p {
   opacity: 1;
-  -webkit-transform: scale3d(0.8, 0.8, 1);
-  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transform: scale3d(0.8,0.8,1);
 }
 
 .n10s-taipei h2 {
   padding-top: 26%;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-taipei p {
@@ -1478,26 +1351,27 @@ div[class*="et_pb_image_n10s_"] {
 
 .n10s-taipei:hover img {
   opacity: 0.7;
-  -webkit-transform: scale3d(1.05, 1.05, 1);
-  transform: scale3d(1.05, 1.05, 1);
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
 }
 
 .n10s-taipei:hover .n10s-overlay::after {
   opacity: 1;
-  -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
-  transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+  -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+  transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
 }
 
 .n10s-taipei:hover h2,
 .n10s-taipei:hover p {
   opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
 }
 
 /*---------------*/
 /***** Portland *****/
 /*---------------*/
+
 .n10s-portland {
   background: #030c17;
 }
@@ -1515,32 +1389,26 @@ div[class*="et_pb_image_n10s_"] {
   bottom: 30px;
   left: 30px;
   border: 2px solid #fff;
-  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
   content: '';
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: scale3d(1.4, 1.4, 1);
-  transform: scale3d(1.4, 1.4, 1);
+  -webkit-transform: scale3d(1.4,1.4,1);
+  transform: scale3d(1.4,1.4,1);
 }
 
 .n10s-portland h2 {
   margin: 20% 0 10px 0;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-portland p {
   padding: 1em !important;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
@@ -1553,12 +1421,12 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-portland:hover .n10s-overlay::before,
 .n10s-portland:hover p {
   opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
 }
 
 .n10s-portland:hover .n10s-overlay {
-  background-color: rgba(58, 52, 42, 0);
+  background-color: rgba(58,52,42,0);
 }
 
 .n10s-portland:hover img {
@@ -1568,18 +1436,16 @@ div[class*="et_pb_image_n10s_"] {
 /*---------------*/
 /***** Madison *****/
 /*---------------*/
+
 .n10s-madison {
-  background: -webkit-linear-gradient(-45deg, #000 0%, #fff 100%);
-  background: -webkit-linear-gradient(135deg, #000 0%, #fff 100%);
-  background: linear-gradient(-45deg, #000 0%, #fff 100%);
+  background: -webkit-linear-gradient(-45deg, #000 0%,#fff 100%);
+  background: linear-gradient(-45deg, #000 0%,#fff 100%);
 }
 
 .n10s-madison img {
   opacity: 0.9;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -1587,9 +1453,7 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-madison .n10s-overlay::before,
 .n10s-madison p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-madison .n10s-overlay::before {
@@ -1600,11 +1464,11 @@ div[class*="et_pb_image_n10s_"] {
   height: 300px;
   border: 2px solid #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 900px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 900px rgba(255,255,255,0.2);
   content: '';
   opacity: 0;
-  -webkit-transform: scale3d(0.5, 0.5, 1);
-  transform: scale3d(0.5, 0.5, 1);
+  -webkit-transform: scale3d(0.5,0.5,1);
+  transform: scale3d(0.5,0.5,1);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
@@ -1616,11 +1480,9 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-madison h2 {
   text-align: left;
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(5px, 5px, 0);
-  transform: translate3d(5px, 5px, 0);
+  -webkit-transform: translate3d(5px,5px,0);
+  transform: translate3d(5px,5px,0);
 }
 
 .n10s-madison p {
@@ -1631,53 +1493,49 @@ div[class*="et_pb_image_n10s_"] {
   width: 140px;
   text-align: right;
   opacity: 0;
-  -webkit-transform: translate3d(20px, 20px, 0);
-  transform: translate3d(20px, 20px, 0);
+  -webkit-transform: translate3d(20px,20px,0);
+  transform: translate3d(20px,20px,0);
 }
 
 .n10s-madison:hover .n10s-overlay::before {
   opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
 }
 
 .n10s-madison:hover h2,
 .n10s-madison:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /*---------------*/
 /**** Jerusalem ****/
 /*---------------*/
+
 .n10s-jerusalem {
-  background: -webkit-linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
-  background: -webkit-linear-gradient(135deg, #34495e 0%, #cc6055 100%);
-  background: linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
+  background: -webkit-linear-gradient(-45deg, #34495e 0%,#cc6055 100%);
+  background: linear-gradient(-45deg, #34495e 0%,#cc6055 100%);
 }
 
 .n10s-jerusalem img,
 .n10s-jerusalem p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .n10s-jerusalem:hover img {
   opacity: 0.1;
-  -webkit-transform: scale3d(2, 2, 1);
-  transform: scale3d(2, 2, 1);
+  -webkit-transform: scale3d(2,2,1);
+  transform: scale3d(2,2,1);
 }
 
 .n10s-jerusalem h2 {
   -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: scale3d(0.8, 0.8, 1);
-  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transform: scale3d(0.8,0.8,1);
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
@@ -1692,8 +1550,8 @@ div[class*="et_pb_image_n10s_"] {
   text-transform: none;
   font-size: 90%;
   opacity: 0;
-  -webkit-transform: scale3d(0.8, 0.8, 1);
-  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transform: scale3d(0.8,0.8,1);
   -webkit-transform-origin: 50% -100%;
   transform-origin: 50% -100%;
 }
@@ -1701,8 +1559,8 @@ div[class*="et_pb_image_n10s_"] {
 .n10s-jerusalem:hover h2,
 .n10s-jerusalem:hover p {
   opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
 }
 
 /* Adjustments for smaller screens */
@@ -1760,6 +1618,7 @@ div[class*="et_pb_image_n10s_"] {
     right: 15px;
     bottom: 40px;
     left: 15px;
+    height: -webkit-calc(50% - 40px);
     height: calc(50% - 40px);
     border: 4px solid #fff;
   }
@@ -1794,7 +1653,7 @@ div[class*="et_pb_image_n10s_"] {
     padding: 15px !important;
   }
   .n10s-toronto:hover img {
-    -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0,-50px,0);
+    transform: translate3d(0,-50px,0);
   }
 }

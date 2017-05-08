@@ -156,6 +156,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/styles\/partials\/_image-intense.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/partials\/_image-intense.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/styles\/partials\/_input.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -178,8 +191,8 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/style.css",
-		"oF": 2,
-		"oS": 0,
+		"oF": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/exports\/Soma Divi Builder Layouts.json": {
@@ -200,6 +213,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/modules\/image-intense\/class-et-builder-module-image-n10s.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/modules\/image-intense\/class-et-builder-module-image-n10s.php",
+		"oF": 0
+		},
+	"\/modules\/image-intense\/image-intense.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/modules\/image-intense\/image-intense.php",
+		"oF": 0
+		},
+	"\/modules\/init.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/modules\/init.php",
 		"oF": 0
 		},
 	"\/README.md": {

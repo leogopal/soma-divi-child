@@ -15,3 +15,7 @@ function theme_enqueue_styles() {
 		'divi-custom-script'
 	), '0.0.1', true );
 }
+
+include get_stylesheet_directory() . '/modules/init.php';
+
+
