@@ -69,6 +69,14 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/divi-layouts\/Soma Divi Builder Layouts.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/divi-layouts\/Soma Divi Builder Layouts-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/functions.php": {
 		"ft": 8192,
 		"oA": 2,
