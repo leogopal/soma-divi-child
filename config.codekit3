@@ -195,10 +195,198 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"\/exports\/Soma Divi Builder Layouts.json": {
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-black-bg.png": {
+		"ft": 32768,
+		"iS": 152608,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-black-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-blue-bg.png": {
+		"ft": 32768,
+		"iS": 165152,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-blue-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-brown-bg.png": {
+		"ft": 32768,
+		"iS": 123958,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-brown-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-cream-bg.png": {
+		"ft": 32768,
+		"iS": 174433,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-cream-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-green-bg.png": {
+		"ft": 32768,
+		"iS": 127804,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-green-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-red-bg.png": {
+		"ft": 32768,
+		"iS": 170126,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-red-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-white-bg.png": {
+		"ft": 32768,
+		"iS": 154701,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-white-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-yelllow-bg.png": {
+		"ft": 32768,
+		"iS": 164855,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottle-yelllow-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottles-with-background.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles with Background\/sample-bottles-with-background.psd",
+		"oF": 0
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-black.png": {
+		"ft": 32768,
+		"iS": 76028,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-blue.png": {
+		"ft": 32768,
+		"iS": 75585,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-blue.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-brown.png": {
+		"ft": 32768,
+		"iS": 74841,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-brown.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-cream.png": {
+		"ft": 32768,
+		"iS": 75908,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-cream.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-green.png": {
+		"ft": 32768,
+		"iS": 73459,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-green.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-red.png": {
+		"ft": 32768,
+		"iS": 72248,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-red.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-white.png": {
+		"ft": 32768,
+		"iS": 76730,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-yelllow.png": {
+		"ft": 32768,
+		"iS": 72626,
+		"oA": 0,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottle-yelllow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottles.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/exports\/sample-bottle-images\/Sample Bottles without Backgrounds\/sample-bottles.psd",
+		"oF": 0
+		},
+	"\/exports\/Soma - Divi Builder Layouts.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/exports\/Soma Divi Builder Layouts-min.json",
+		"oAP": "\/exports\/Soma - Divi Builder Layouts-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1

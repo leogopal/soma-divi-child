@@ -29,6 +29,30 @@
   display: none;
 }
 
+#top-menu-nav #top-menu li.mega-menu.products:hover ul.sub-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  text-align: center;
+}
+
+#top-menu-nav #top-menu li.mega-menu.products:hover ul.sub-menu img {
+  display: block;
+  margin: 0 auto;
+  width: 33%;
+}
+
 /* Vertical Navigation */
 /* Header Style */
 /* Fullwidth Header */
