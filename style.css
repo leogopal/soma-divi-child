@@ -80,6 +80,57 @@ Four column full width grid
   margin: 0;
 }
 
+.products-selector-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.products-selector-menu ul li {
+  width: 20%;
+  margin: 15px 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.products-selector-menu ul li:hover img {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+.products-selector-menu ul li a {
+  color: #5d5d5d;
+}
+
+.products-selector-menu ul li img {
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media all and (max-width: 640px) {
+  .products-selector-menu ul li {
+    width: 100%;
+  }
+}
+
 /* Grid */
 /*----- Tabs -----*/
 .sera-tabbed-container {
