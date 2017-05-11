@@ -1,0 +1,55 @@
+/*----- Tabs -----*/
+.sera-tabbed-container {
+  display: inline-block;
+
+  .et_pb_row_fullwidth,
+  .et_pb_specialty_fullwidth {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /*----- Tab Links -----*/
+
+  ul.tab-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    /* Clearfix */
+    &::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    li {
+      display: inline-block;
+      cursor: pointer;
+      padding: 20px 30px;
+      color: #848484;
+      font-size: 20px;
+      transition: all linear 0.15s;
+
+      &.active, &:hover {
+        color: #000;
+        border-bottom: 1px solid #000;
+      }
+    }
+
+  }
+
+  /*----- Content of Tabs -----*/
+  .tabbed {
+    display: none;
+    transition: all linear 0.15s;
+
+    &.active {
+      display: block;
+    }
+  }
+
+}
+
+
+
+

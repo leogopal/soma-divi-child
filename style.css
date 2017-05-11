@@ -80,6 +80,58 @@ Four column full width grid
   margin: 0;
 }
 
+/* Grid */
+/*----- Tabs -----*/
+.sera-tabbed-container {
+  display: inline-block;
+  /*----- Tab Links -----*/
+  /*----- Content of Tabs -----*/
+}
+
+.sera-tabbed-container .et_pb_row_fullwidth,
+.sera-tabbed-container .et_pb_specialty_fullwidth {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.sera-tabbed-container ul.tab-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* Clearfix */
+}
+
+.sera-tabbed-container ul.tab-links::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.sera-tabbed-container ul.tab-links li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px 30px;
+  color: #848484;
+  font-size: 20px;
+  -webkit-transition: all linear 0.15s;
+  transition: all linear 0.15s;
+}
+
+.sera-tabbed-container ul.tab-links li.active, .sera-tabbed-container ul.tab-links li:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.sera-tabbed-container .tabbed {
+  display: none;
+  -webkit-transition: all linear 0.15s;
+  transition: all linear 0.15s;
+}
+
+.sera-tabbed-container .tabbed.active {
+  display: block;
+}
+
 /* Button */
 /* Input */
 /* Footer */
