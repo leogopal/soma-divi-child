@@ -10,6 +10,7 @@
 *.vi
 *.zip
 *~
+*.codekit3
 
 # OS or Editor folders
 ._*

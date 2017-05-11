@@ -71,11 +71,11 @@
 		},
 	"\/assets\/js\/scripts.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/scripts-min.js",
-		"oF": 0,
-		"sC": 1,
+		"oF": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/assets\/styles\/base\/_mixins.scss": {
@@ -178,6 +178,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/styles\/partials\/_input.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/styles\/partials\/_tabs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/partials\/_tabs.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
