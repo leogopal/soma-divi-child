@@ -136,7 +136,6 @@ Four column full width grid
 .sera-tabbed-container {
   display: inline-block;
   /*----- Tab Links -----*/
-  /*----- Content of Tabs -----*/
 }
 
 .sera-tabbed-container .et_pb_row_fullwidth,
@@ -173,13 +172,14 @@ Four column full width grid
   border-bottom: 1px solid #000;
 }
 
-.sera-tabbed-container .tabbed {
+/*----- Content of Tabs -----*/
+.tabbed {
   display: none;
   -webkit-transition: all linear 0.15s;
   transition: all linear 0.15s;
 }
 
-.sera-tabbed-container .tabbed.active {
+.tabbed.active {
   display: block;
 }
 
