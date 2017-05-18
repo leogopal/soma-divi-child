@@ -35,20 +35,21 @@
         border-bottom: 1px solid #000;
       }
     }
-
-  }
-
-  /*----- Content of Tabs -----*/
-  .tabbed {
-    display: none;
-    transition: all linear 0.15s;
-
-    &.active {
-      display: block;
-    }
   }
 
 }
+
+
+/*----- Content of Tabs -----*/
+.tabbed {
+  display: none;
+  transition: all linear 0.15s;
+
+  &.active {
+    display: block;
+  }
+}
+
 
 
 
