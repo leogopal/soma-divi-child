@@ -3,7 +3,6 @@ Four column full width grid
  */
 
 .sera-grid {
-
   &.et_pb_section {
     padding: 0;
 
@@ -19,8 +18,45 @@ Four column full width grid
           margin: 0;
         }
       }
+    }
+  }
+}
 
+.products-selector-menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+
+  li {
+    width: 20%;
+    margin: 15px 5px;
+    transition: all 0.5s ease;
+
+    &:hover img {
+      transform: scale(0.9, 0.9);
     }
 
+    a {
+      color: #5d5d5d;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      transition: all 0.5s ease;
+    }
   }
+
+  @media all and (max-width: 640px) {
+    li {
+      width: 100%;
+    }
+  }
+
 }

@@ -59,3 +59,38 @@ function sera_et_builder_post_types( $post_types ) {
 }
 add_filter( 'et_builder_post_types', 'sera_et_builder_post_types' );
 
+add_shortcode( 'woo_product_family' , 'sera_product_family' );
+function sera_product_family() {
+	global $post;
+	$product_category_id = '';
+	$products_output = '';
+	$terms = get_the_terms( $post->ID, 'product_cat' );
+	foreach ( $terms as $term ) {
+		$product_category_id = $term->id;
+		break;
+	}
+	$args = array(
+		'posts_per_page' => 100,
+		'category'       => $product_category_id,
+		'post_type'      => 'product',
+		'orderby'        => 'title'
+	);
+	$products = get_posts( $args );
+	ob_start();
+	?>
+	<section class="products-selector-menu">
+		<ul class="menu-secend clearfix">
+			<?php foreach ( $products as $product ) { ?>
+				<li class="<?php echo $product->post_name; ?>">
+					<a href="<?php echo get_permalink( $product ) ?>">
+						<?php echo get_the_post_thumbnail($product, array(40, 131)); ?><?php echo $product->post_title; ?>
+					</a>
+				</li>
+			<?php } ?>
+		</ul>
+	</section>
+	<?php
+	$products_output = ob_get_clean();
+	return $products_output;
+}
+
